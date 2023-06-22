@@ -1,0 +1,41 @@
+*{
+    margin: 0 auto;
+}
+
+body {
+    background: #d4d4d4;
+}
+.skype{
+    margin-top: 15em;
+    background: #00aff0;
+    width: 9em;
+    height: 9em;
+    border-radius: 5em;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+.skype span{
+    font: 7em bold, Arial;
+    position: relative;
+}
+
+.skype::before, .skype::after{
+    position: absolute;
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 4em;
+    z-index: -1;
+}
+.skype::before{
+    content: "";
+    left: 0;
+    top: -5px;
+    background: linear-gradient(#00aff0,#9ebcf8);
+}
+.skype::after{
+    content: "";
+    bottom:  -5px;
+    right: 0;
+    background: linear-gradient(#9ebcf8, #00aff0);
+}
